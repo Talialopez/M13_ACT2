@@ -1,0 +1,7 @@
+/**
+ * yunai
+ */
+public class yunai {
+
+    
+}
