@@ -1,13 +1,48 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package com.mycompany.mobileworldcongres;
+packagtige com.mycompany.mobileworldcongres;
 
-/**
- *
- * @author talia
- */
-public class Dispositivo {
+public abstract class Dispositivo{
     
+    private String marca;
+    private String modelo;
+    private double precioBase;
+    
+    public  Dispositivo(String marca, String modelo, double precioBase){
+        if (precioBase < 0){
+            throw new IllegalArgumentException("El precio no es correcto");
+        }
+        this.marca = marca;
+        this.modelo = modelo;
+        this.precioBase = precioBase;
+    }
+
+    public String getMarca() {
+        return marca;
+    }
+
+    public void setMarca(String marca) {
+        this.marca = marca;
+    }
+
+    public String getModelo() {
+        return modelo;
+    }
+
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public double getPrecioBase() {
+        return precioBase;
+    }
+
+    public void setPrecioBase(double precioBase) {
+        this.precioBase = precioBase;
+    }
+
+    @Override
+    public String toString() {
+        return "Dispositivo{" + "marca=" + marca + ", modelo=" + modelo + ", precioBase=" + precioBase + "€" + '}';
+    }
+    
+    public abstract double preuFinal();
 }
