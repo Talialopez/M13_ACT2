@@ -1,4 +1,4 @@
-packagtige com.mycompany.mobileworldcongres;
+package com.mycompany.mobileworldcongres;
 
 public abstract class Dispositivo{
     
