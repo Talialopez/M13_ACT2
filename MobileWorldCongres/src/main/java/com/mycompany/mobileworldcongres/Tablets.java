@@ -18,6 +18,7 @@ public class Tablets extends Dispositivo implements GamaAlta{
     public Tablets(String marca, String modelo, double precioBase, double pulgadas) {
         super(marca, modelo, precioBase);
         this.pulgadas = pulgadas;
+        
     }
 
     public double getPulgadas() {
