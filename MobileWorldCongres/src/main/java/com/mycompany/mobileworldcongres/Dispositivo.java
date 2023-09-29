@@ -1,10 +1,5 @@
 package com.mycompany.mobileworldcongres;
 
-/**
- *
- * @author Talía
- */
-
 public abstract class Dispositivo{
     
     private String marca;
@@ -12,9 +7,6 @@ public abstract class Dispositivo{
     private double precioBase;
     
     public  Dispositivo(String marca, String modelo, double precioBase){
-        if (precioBase < 0){
-            throw new IllegalArgumentException("El precio no es correcto");
-        }
         this.marca = marca;
         this.modelo = modelo;
         this.precioBase = precioBase;
@@ -46,7 +38,7 @@ public abstract class Dispositivo{
 
     @Override
     public String toString() {
-        return "Dispositivo{" + "marca=" + marca + ", modelo=" + modelo + ", precioBase=" + precioBase + "€" + '}';
+        return "Dispositiu{" + "marca=" + marca + ", modelo=" + modelo + ", precioBase=" + precioBase + "€" + '}';
     }
     
     public abstract double precioFinal();
