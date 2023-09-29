@@ -26,14 +26,11 @@ public class Tablets extends Dispositivo implements GamaAlta{
 
     @Override
     public String toString() {
-        return "Tablets{" + "pulgadas=" + pulgadas + '}';
+        return "Tablets{" + "pulgadas=" + pulgadas + super.toString() + '}';
     }
     
-    
-    
-    
     @Override
-    public double preuFinal() {
+    public double precioFinal() {
         double precioBase;
         double precioFinal;
         precioBase = getPrecioBase();
@@ -44,6 +41,6 @@ public class Tablets extends Dispositivo implements GamaAlta{
 
     @Override
     public boolean esGamaAlta() {
-       return this.preuFinal() > 900;
+       return this.precioFinal() > 900;
     }
 }

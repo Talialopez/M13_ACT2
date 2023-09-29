@@ -68,4 +68,9 @@ public abstract class Dispositivo{
         return "Marca: " + marca + "\nModel: " + model + "\nPreu Base: " + preuBase +
                "\nAcceleròmetre: " + (accelerometre ? "Sí" : "No") + "\nGPS: " + (gps ? "Sí" : "No");
     }
+
+    
+    public abstract double precioFinal();
 }
+}
+
