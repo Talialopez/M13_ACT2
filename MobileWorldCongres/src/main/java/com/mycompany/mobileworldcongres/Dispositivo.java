@@ -49,5 +49,5 @@ public abstract class Dispositivo{
         return "Dispositivo{" + "marca=" + marca + ", modelo=" + modelo + ", precioBase=" + precioBase + "€" + '}';
     }
     
-    public abstract double preuFinal();
+    public abstract double precioFinal();
 }
