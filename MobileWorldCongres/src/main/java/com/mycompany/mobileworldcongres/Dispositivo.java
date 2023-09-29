@@ -1,6 +1,13 @@
 package com.mycompany.mobileworldcongres;
 
 public class Dispositivo {
+/**
+ *
+ * @author Talía
+ */
+
+public abstract class Dispositivo{
+    
     private String marca;
     private String model;
     private double preuBase;
