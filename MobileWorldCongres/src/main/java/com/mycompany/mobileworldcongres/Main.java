@@ -11,9 +11,9 @@ public class Main {
     public static void main(String[] args) {
         List <Dispositivo> dispositivos = new ArrayList<>();
     
-        dispositivos.add(new OtrosDispositivos("Apple", "Clásico", 400, "Reloj"));
-        //dispositivos.add(new Smartphone();
-        //dispositivos.add(new Smartphone();
+        dispositivos.add(new OtrosDispositivos("Apple", "Clásico", 100, "Reloj"));
+        dispositivos.add(new Smartphone("Android", "Samung", "S20FE", 300));
+        dispositivos.add(new Smartphone("IOS", true, true, "Iphone", "7", 500));
         dispositivos.add(new Tablets("Huawei", "Clásico", 400, 10.15));
         dispositivos.add(new OtrosDispositivos("Samsung", "15S", 750, "Reloj"));
         

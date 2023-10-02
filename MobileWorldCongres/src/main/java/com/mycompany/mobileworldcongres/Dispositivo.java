@@ -13,8 +13,7 @@ public class Dispositivo {
         this.accelerometre = accelerometre;
         this.gps = gps;
     }
-
-    // Getters i setters per cada atribut
+  
     public String getSistemaOperatiu() {
         return sistemaOperatiu;
     }
@@ -68,6 +67,11 @@ public class Dispositivo {
         return "Sistema Operatiu: " + sistemaOperatiu + "\nMarca: " + marca + "\nModel: " + model + "\nPreu Base: " + preuBase +
                "\nAcceleròmetre: " + (accelerometre ? "Sí" : "No") + "\nGPS: " + (gps ? "Sí" : "No");
     }
+
+    
+    public abstract double precioFinal();
+}
+
 }
 
 
