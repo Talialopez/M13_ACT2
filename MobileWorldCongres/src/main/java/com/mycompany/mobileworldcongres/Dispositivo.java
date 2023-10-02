@@ -1,15 +1,25 @@
 package com.mycompany.mobileworldcongres;
 
-public abstract class Dispositivo{
-    
-    private String marca;
-    private String modelo;
-    private double precioBase;
-    
-    public  Dispositivo(String marca, String modelo, double precioBase){
+public class Dispositivo {
+    private String sistemaOperatiu;
+    private boolean accelerometre;
+    private boolean gps;
+
+    public Dispositivo(String sistemaOperatiu, String marca, String model, double preuBase, boolean accelerometre, boolean gps) {
+        this.sistemaOperatiu = sistemaOperatiu;
         this.marca = marca;
-        this.modelo = modelo;
-        this.precioBase = precioBase;
+        this.model = model;
+        this.preuBase = preuBase;
+        this.accelerometre = accelerometre;
+        this.gps = gps;
+    }
+  
+    public String getSistemaOperatiu() {
+        return sistemaOperatiu;
+    }
+
+    public void setSistemaOperatiu(String sistemaOperatiu) {
+        this.sistemaOperatiu = sistemaOperatiu;
     }
 
     public String getMarca() {
@@ -20,26 +30,48 @@ public abstract class Dispositivo{
         this.marca = marca;
     }
 
-    public String getModelo() {
-        return modelo;
+    public String getModel() {
+        return model;
     }
 
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
+    public void setModel(String model) {
+        this.model = model;
     }
 
-    public double getPrecioBase() {
-        return precioBase;
+    public double getPreuBase() {
+        return preuBase;
     }
 
-    public void setPrecioBase(double precioBase) {
-        this.precioBase = precioBase;
+    public void setPreuBase(double preuBase) {
+        this.preuBase = preuBase;
+    }
+
+    public boolean isAccelerometre() {
+        return accelerometre;
+    }
+
+    public void setAccelerometre(boolean accelerometre) {
+        this.accelerometre = accelerometre;
+    }
+
+    public boolean isGps() {
+        return gps;
+    }
+
+    public void setGps(boolean gps) {
+        this.gps = gps;
     }
 
     @Override
     public String toString() {
-        return "Dispositiu{" + "marca=" + marca + ", modelo=" + modelo + ", precioBase=" + precioBase + "€" + '}';
+        return "Sistema Operatiu: " + sistemaOperatiu + "\nMarca: " + marca + "\nModel: " + model + "\nPreu Base: " + preuBase +
+               "\nAcceleròmetre: " + (accelerometre ? "Sí" : "No") + "\nGPS: " + (gps ? "Sí" : "No");
     }
+
     
     public abstract double precioFinal();
 }
+
+}
+
+
