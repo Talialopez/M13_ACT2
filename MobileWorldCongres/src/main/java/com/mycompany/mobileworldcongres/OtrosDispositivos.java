@@ -23,11 +23,11 @@ public class OtrosDispositivos extends Dispositivo{
 
     @Override
     public String toString() {
-        return "OtrosDispositivos{" + "descripcion=" + descripcion + '}';
+        return "OtrosDispositivos{" + "descripcion=" + descripcion + super.toString() + '}';
     }
     
     @Override
-    public double preuFinal() {
+    public double precioFinal() {
         double precioBase;
         double precioFinal;
         
